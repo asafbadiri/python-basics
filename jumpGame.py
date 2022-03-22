@@ -1,3 +1,4 @@
+# simple recursive python script 
 def recorsive(curS,indx=0):
     global bestS
     global nums

@@ -1,0 +1,1 @@
+[{"stmt":"SELECT id, username, password\nFROM users;","header":["id","username","password"],"rows":[["1","asafb01","123456"],["2","alfasi77","asaf1308"],["3","ziv","662661"]]}]

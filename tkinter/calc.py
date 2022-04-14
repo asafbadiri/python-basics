@@ -1,10 +1,5 @@
 from tkinter import *
 
-win=Tk()
-win.title("Calculater TKinter");
-win.geometry("300x165")
-#window.iconbitmap('@c.xbm');
-
 def cal_sum(a,b): return a + b
 def cal_sub(a,b): return a - b
 def cal_mult(a,b): return a * b
@@ -21,6 +16,11 @@ def action(act):
    except ValueError:
          txt = "Wrong inputs"
    label.config(text=txt)
+
+win=Tk()
+win.title("Calculater TKinter");
+win.geometry("300x165")
+#window.iconbitmap('@c.xbm')  #Linux Only
 
 Label(win, text="Enter First Number", font=('Calibri 10')).grid(row=1, column= 1,columnspan=4)
 a=Entry(win, width=35)

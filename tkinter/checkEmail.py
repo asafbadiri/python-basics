@@ -40,16 +40,13 @@ class CheckMailFrame(tk.Frame):
 
 
 class MyApplication(tk.Tk):
-    """Hello World Main Application"""
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-
         # set the window properties
         self.title("Check Email")
         self.geometry("600x400")
         self.resizable(width=False, height=False)
-
         # Define the UI
         CheckMailFrame(self).grid(sticky=(tk.E + tk.W + tk.N + tk.S))
         self.columnconfigure(0, weight=1)
